@@ -1,26 +1,27 @@
 # 🕵️‍♂️ webrecon.sh
 
-Script simples em Bash para realizar **força bruta de diretórios ou arquivos** em aplicações web, utilizando uma wordlist personalizada. Ideal para fases iniciais de reconhecimento em testes de penetração (pentest).
+Simple Bash script to perform **directory or file brute-force** on web applications using a custom wordlist. Ideal for the initial reconnaissance phase in penetration testing (pentest).
 
 ---
 
-## 📂 Descrição
+## 📂 Description
 
-Este script utiliza `curl` para testar a existência de caminhos específicos em um alvo HTTP/HTTPS com base em uma lista de palavras (wordlist). Ele verifica se a resposta retorna **HTTP 200 OK**, indicando que o diretório ou arquivo existe.
+This script uses `curl` to test the existence of specific paths on an HTTP/HTTPS target based on a wordlist. It checks whether the response returns **HTTP 200 OK**, indicating that the directory or file exists.
 
 ---
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
 - `bash`
 - `curl`
-- Wordlist chamada `lista2.txt` no mesmo diretório do script
+- A wordlist named `lista2.txt` in the same directory as the script  
+  _(You may also use a wordlist from [SecLists](https://github.com/danielmiessler/SecLists) if preferred.)_
 
 ---
 
-## ▶️ Uso
+## ▶️ Usage
 
 ```bash
 chmod +x webrecon.sh
-./webrecon.sh <URL-alvo> <extensao>
-
+./webrecon.sh <target-URL> <extension>
+```
